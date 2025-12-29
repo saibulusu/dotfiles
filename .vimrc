@@ -13,7 +13,6 @@ set smartcase
 set hlsearch
 set incsearch
 set mouse=a
-set relativenumber
 set clipboard+=unnamed
 set autoindent
 set smartindent
