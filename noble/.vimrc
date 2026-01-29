@@ -1,8 +1,7 @@
-if v:version < 802
-    packadd! dracula
-endif
 syntax enable
+
 colorscheme dracula
+
 set number
 set expandtab
 set tabstop=2
@@ -17,3 +16,10 @@ set clipboard=unnamedplus
 set autoindent
 set smartindent
 set nofixeol
+set nocompatible
+
+filetype plugin on
+
+cabbrev hsp sp
+
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
